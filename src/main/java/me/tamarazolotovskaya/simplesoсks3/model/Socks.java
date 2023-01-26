@@ -11,29 +11,33 @@ import me.tamarazolotovskaya.simplesoсks3.deserialization.SocksDeserialization;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-@JsonDeserialize(using = SocksDeserialization.class)
+//@JsonDeserialize(using = SocksDeserialization.class)
 public class Socks {
     private  Color color;
     private  Size size;
     private int cottonPart;
 
     public Socks(String key) {
+        Socks socks;
         try {
-            Socks socks =
+            socks =
                     new ObjectMapper().readValue(key, Socks.class);
         } catch (JsonProcessingException e) {
             throw new RuntimeException(e);
         }
+        this.color=socks.getColor();
+        this.size=socks.getSize();
+        this.cottonPart=socks.getCottonPart();
     }
 
 
 
-    @Override
+  /*  @Override
     public String toString() {
         return "Socks:{" +
                 "colorName: " + color.getColorName() +
                 ", sizeNumber: " + size.getSizeNumber() +
                 ", cottonPart: " + cottonPart +
                 '}';
-    }
+    }*/
 }

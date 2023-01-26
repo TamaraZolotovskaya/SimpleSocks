@@ -23,7 +23,7 @@ public class SocksServise {
     private static Map<Socks, Integer> socksMap = new HashMap<>();
 
 
-    @PostConstruct
+   /* @PostConstruct
     private void init() {
         String json = fileService.readFromFile(socksDataFileName);
         try {
@@ -33,7 +33,7 @@ public class SocksServise {
         } catch (JsonProcessingException e) {
             throw new RuntimeException(e);
         }
-    }
+    }*/
 
 
     private boolean ValidateSocks(Socks socks, Integer quantity) {

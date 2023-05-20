@@ -1,12 +1,8 @@
-package me.tamarazolotovskaya.simplesoсks3.services;
-import com.fasterxml.jackson.core.JsonProcessingException;
-import com.fasterxml.jackson.core.type.TypeReference;
-import com.fasterxml.jackson.databind.ObjectMapper;
-import me.tamarazolotovskaya.simplesoсks3.exeption.IncorrectParamExeption;
-import me.tamarazolotovskaya.simplesoсks3.model.*;
+package me.tamarazolotovskaya.simplesocks3.services;
+import me.tamarazolotovskaya.simplesocks3.exeption.IncorrectParamExeption;
+import me.tamarazolotovskaya.simplesocks3.model.*;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
-import javax.annotation.PostConstruct;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -21,19 +17,6 @@ public class SocksServise {
     }
 
     private static Map<Socks, Integer> socksMap = new HashMap<>();
-
-
-  /*  @PostConstruct
-    private void init() {
-        String json = fileService.readFromFile(socksDataFileName);
-        try {
-            socksMap =
-                    new ObjectMapper().readValue(json, new TypeReference<Map<Socks, Integer>>() {
-                    });
-        } catch (JsonProcessingException e) {
-            throw new RuntimeException(e);
-        }
-    }*/
 
 
     private boolean ValidateSocks(Socks socks, Integer quantity) {

@@ -1,4 +1,4 @@
-package me.tamarazolotovskaya.simplesoсks3.model;
+package me.tamarazolotovskaya.simplesocks3.model;
 
 import com.fasterxml.jackson.annotation.JsonValue;
 import lombok.AllArgsConstructor;

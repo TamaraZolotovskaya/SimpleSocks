@@ -1,10 +1,9 @@
-package me.tamarazolotovskaya.simplesoсks3.model;
+package me.tamarazolotovskaya.simplesocks3.model;
 
 import com.fasterxml.jackson.annotation.JsonValue;
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
 import org.springframework.lang.Nullable;
-
 
 @NoArgsConstructor
 @AllArgsConstructor
@@ -21,8 +20,6 @@ public enum Color {
     public String getColorName() {
         return colorName;
     }
-
-
 
     @Nullable
     public static Color parse(String colorName) {

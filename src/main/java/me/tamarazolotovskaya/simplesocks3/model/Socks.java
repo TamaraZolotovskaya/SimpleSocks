@@ -1,4 +1,4 @@
-package me.tamarazolotovskaya.simplesoсks3.model;
+package me.tamarazolotovskaya.simplesocks3.model;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;

@@ -1,4 +1,4 @@
-package me.tamarazolotovskaya.simplesoсks3.exeption;
+package me.tamarazolotovskaya.simplesocks3.exeption;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ResponseStatus;

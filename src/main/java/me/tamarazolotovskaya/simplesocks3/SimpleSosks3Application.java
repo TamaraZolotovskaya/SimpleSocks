@@ -1,4 +1,4 @@
-package me.tamarazolotovskaya.simplesoсks3;
+package me.tamarazolotovskaya.simplesocks3;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

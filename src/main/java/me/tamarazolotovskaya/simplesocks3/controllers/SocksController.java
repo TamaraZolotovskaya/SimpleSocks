@@ -1,10 +1,10 @@
-package me.tamarazolotovskaya.simplesoсks3.controllers;
+package me.tamarazolotovskaya.simplesocks3.controllers;
 
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
-import me.tamarazolotovskaya.simplesoсks3.model.SosksDto;
-import me.tamarazolotovskaya.simplesoсks3.services.FileService;
-import me.tamarazolotovskaya.simplesoсks3.services.SocksServise;
+import me.tamarazolotovskaya.simplesocks3.model.SosksDto;
+import me.tamarazolotovskaya.simplesocks3.services.FileService;
+import me.tamarazolotovskaya.simplesocks3.services.SocksServise;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 

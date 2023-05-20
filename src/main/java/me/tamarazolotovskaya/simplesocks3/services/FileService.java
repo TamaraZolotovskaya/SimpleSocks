@@ -1,4 +1,4 @@
-package me.tamarazolotovskaya.simplesoсks3.services;
+package me.tamarazolotovskaya.simplesocks3.services;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -12,14 +12,12 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.nio.file.Files;
-import java.nio.file.NoSuchFileException;
 import java.nio.file.Path;
 
 @Service
 public class FileService {
     @Value("${path.to.data.file}")
     private String dataFilepath;
-
 
     public void saveToJsonFile(Object object, String fileName) {
         Path path = Path.of(dataFilepath, fileName);
@@ -32,16 +30,6 @@ public class FileService {
             e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
-        }
-    }
-
-    public String readFromFile(String fileName) {
-        try {
-            return Files.readString(Path.of(dataFilepath, fileName));
-        } catch (NoSuchFileException e) {
-            return "{}";
-        } catch (IOException e) {
-            throw new RuntimeException(e);
         }
     }
 

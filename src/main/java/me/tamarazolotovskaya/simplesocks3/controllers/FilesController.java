@@ -1,9 +1,9 @@
-package me.tamarazolotovskaya.simplesoсks3.controllers;
+package me.tamarazolotovskaya.simplesocks3.controllers;
 
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
-import me.tamarazolotovskaya.simplesoсks3.services.FileService;
-import me.tamarazolotovskaya.simplesoсks3.services.SocksServise;
+import me.tamarazolotovskaya.simplesocks3.services.FileService;
+import me.tamarazolotovskaya.simplesocks3.services.SocksServise;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.core.io.InputStreamResource;
 import org.springframework.http.HttpHeaders;

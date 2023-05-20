@@ -9,10 +9,10 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>me.tamarazolotovskaya</groupId>
-    <artifactId>SimpleSosks3</artifactId>
+    <artifactId>SimpleSoсks3</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>SimpleSosks3</name>
-    <description>SimpleSosks3</description>
+    <name>SimpleSoсks3</name>
+    <description>SimpleSoсks3</description>
     <properties>
         <java.version>17</java.version>
     </properties>
